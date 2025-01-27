@@ -29,6 +29,12 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `How to Use`
+Open the app in your browser.
+Use the dropdowns to select options for each row.
+Add new rows dynamically by clicking the "Add New Row" button.
+Use the multi-select dropdown to add multiple options or create new ones on the fly.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
