@@ -1,15 +1,21 @@
-import React from "react";
-import Table from "./components/Table";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import UserListPage from "./pages/UserListPage";
+import EditUserPage from "./pages/EditUserPage";
 
-const App = () => {
+function App() {
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <div className="w-full max-w-4xl">
-        <h1 className="text-6xl font-bold text-pink-900  text-center mb-6">Cloudify Table</h1>
-        <Table />
-      </div>
-    </div>
+    <>
+     {/* <ToastContainer position="top-right" autoClose={3000} /> */}
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/users" element={<UserListPage />} />
+        <Route path="/edit-user/:id" element={<EditUserPage />} />
+      </Routes>
+    </Router>
+    </>
   );
-};
+}
 
 export default App;
