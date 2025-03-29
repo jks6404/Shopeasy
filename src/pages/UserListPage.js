@@ -65,7 +65,7 @@ const UserListPage = () => {
     <div className="p-6">
       {/* Header Section */}
       <div className="flex justify-between items-center mb-4">
-        <h2 className="text-2xl font-bold">User List</h2>
+        <h2 className="text-4xl font-bold">Hey ReqRes User!</h2>
         <button onClick={handleLogout} className="bg-red-500 text-white px-3 py-1 rounded">
           Logout
         </button>

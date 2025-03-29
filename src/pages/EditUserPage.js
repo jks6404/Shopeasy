@@ -23,14 +23,14 @@ const EditUserPage = () => {
     try {
       await axios.put(`https://reqres.in/api/users/${id}`, user);
 
-      // Update local storage users
+      // Updated local storage users
       let storedUsers = JSON.parse(localStorage.getItem("users")) || [];
       storedUsers = storedUsers.map((u) =>
         u.id === parseInt(id) ? { ...u, ...user } : u
       );
       localStorage.setItem("users", JSON.stringify(storedUsers));
 
-      alert("User updated successfully! (Mock API update)");
+      alert("User updated successfully!");
       navigate("/users", { state: { updated: true } }); // Send update state
     } catch (error) {
       console.error("Error updating user:", error);
