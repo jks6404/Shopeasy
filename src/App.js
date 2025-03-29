@@ -6,7 +6,6 @@ import EditUserPage from "./pages/EditUserPage";
 function App() {
   return (
     <>
-     {/* <ToastContainer position="top-right" autoClose={3000} /> */}
     <Router>
       <Routes>
         <Route path="/" element={<LoginPage />} />
